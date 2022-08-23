@@ -14,6 +14,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-image: linear-gradient(45deg, #1F82BE , #012340);
 }
 
 .logo{
@@ -45,6 +46,7 @@
 .lista li:hover{
     background-color: black;
     color: black;
+    transition: .3s;
 }
 
 .body{
@@ -74,8 +76,9 @@
 
 .video{
     margin: 29px;
-    width: 560;
-    height: 315; 
+    width: auto;
+    height: auto;
+    transform: translate(70px, 25px);
 }
 
 .footer{
@@ -298,6 +301,11 @@
     color: white;
     border: 1px black solid;
     padding: 10px;
+    transition: .3s;
+}
+
+.input:hover{
+    background-color: black;
 }
 
 /************responsive***********/
@@ -357,6 +365,11 @@
        }
     .formulario{
         width: 130px;
+    }
+    .video{
+        margin: 10px;
+        width: 100px;
+        height: 75px;
     }
     .container{
     grid-template-columns: repeat(1, 1fr);
