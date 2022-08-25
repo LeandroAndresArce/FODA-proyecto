@@ -17,22 +17,15 @@
     background-image: linear-gradient(45deg, #1F82BE , #012340);
 }
 
-.logo{
-    margin:0;
-    font-size: 50px;
-    line-height: 200px;
-    float: left;
-    
-}
 .lista{
     float: right;
+    background-color: #089BF4;
 }
 
 .lista li{
     background-color: #012340;
-    border: black 3px solid;
+    border: black 1px solid;
     display: inline-block;
-    padding: 5px 10px;
     text-align: center;
     color: white;
 }
@@ -66,9 +59,6 @@
 .container { 
     max-width: 850px;
     margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
 }
 .container img{
     width: 250px;
@@ -220,7 +210,7 @@
 }
 
 .titulos h4{
-    background-color:#012340;
+    background-color: #089BF4;
     font-weight: 300;
     font-size: 1.2rem;
     padding: .5rem 1rem;
