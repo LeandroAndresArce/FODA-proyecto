@@ -330,6 +330,12 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
+    .grid_perfume{
+        padding: 3rem;
+    }
+    .grid{
+        padding: 3rem;
+    }    
 }
 
 @media(max-width:770px){
@@ -338,11 +344,17 @@
     height: 300px;
     }
     .formulario{
-        width: 200px;
+        width: 300px;
     }
     .footer li{
         margin-inline: 35px;
     }
+    .grid_perfume{
+        padding: 2rem;
+    }    
+    .grid{
+        padding: 2rem;
+    }    
 }
 
 @media(max-width:533px){
@@ -350,11 +362,18 @@
         width: 375px;
         height: 165px;
         }
+        
+    .grid_perfume{
+        padding: 0.1rem;
+    }    
+    .grid{
+        padding: 0.1rem;
+    }    
     .footer li{
             margin-inline: 15px;
        }
     .formulario{
-        width: 130px;
+        width: 200px;
     }
     .video{
         margin: 10px;
