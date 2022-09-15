@@ -1,0 +1,45 @@
+.grid_perfume {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "item1 item2 item3";
+    gap: 2rem;
+    margin: 0;
+
+    .grid_titulo {
+        background-color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: black 2px solid;
+        color: white;
+        text-align: center;
+    }
+
+    .grid_item_perfume {
+        border-radius: 1rem;
+        background-size: cover;
+        background-position: center center;
+        padding: 2rem;
+        border: black 1px solid;
+    }
+
+        .grid_item_perfume_1 {
+            grid-area: item1;
+            background-image: url(../img/perfume-lacoste.jpg);
+            height: 400px;
+        }
+
+        .grid_item_perfume_2 {
+            grid-area: item2;
+            background-image: url(../img/perfume-mujer.jpg);
+            height: 400px;
+        }
+
+        .grid_item_perfume_3 {
+            grid-area: item3;
+            background-image: url(../img/perfume-niños.jpg);
+            height: 400px;
+        }
+    }
+

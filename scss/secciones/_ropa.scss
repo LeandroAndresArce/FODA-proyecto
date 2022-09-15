@@ -1,0 +1,56 @@
+.grid_titulo_oferta {
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: black 2px solid;
+    color: white;
+    text-align: center;
+    width: auto;
+    margin: 40px;
+    padding: 40px;
+}
+
+.grid {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "item1 item2 item3";
+    gap: 2rem;
+    margin: 0;
+
+    .grid_titulo {
+        background-color: black;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        border: black 2px solid;
+        color: white;
+        text-align: center;
+    }
+
+    .grid_item {
+        border-radius: 1rem;
+        background-size: cover;
+        background-position: center center;
+        padding: 2rem;
+        border: black 1px solid;
+    }
+
+    .grid_item_1 {
+        grid-area: item1;
+        background-image: url(../img/hombre4.jpg);
+        height: 400px;
+    }
+
+    .grid_item_2 {
+        grid-area: item2;
+        background-image: url(../img/mujer4.jpg);
+        height: 400px;
+    }
+
+    .grid_item_3 {
+        grid-area: item3;
+        background-image: url(../img/coleccion-niños.jpg);
+        height: 400px;
+    }
+}
+

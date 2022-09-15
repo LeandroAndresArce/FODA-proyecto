@@ -1,0 +1,93 @@
+
+.body {
+    background-color: white;
+    background-image: url(../img/fondo1.jpg);
+    .header {
+        background-color: #1F82BE;
+        width: 100%;
+        border: black 1px solid;
+        background-image: linear-gradient(45deg, #1F82BE, #012340);
+    
+        .lista {
+            gap: 5px;
+
+            li {
+                background-color: #012340;
+                border: black 1px solid;
+                display: inline-block;
+                text-align: center;
+                color: white;
+                border-radius: 1rem;
+                height: 45px;
+                
+                &:hover {
+                    background-color: #089BF4;
+                    transition: .3s;
+                }
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+    .titulo{
+        background-color: black;
+        width: 100%;
+        color: white;
+        text-align: center;
+    }
+
+    .span {
+        background-color: black;
+        color: white;
+        border: black 1px solid;
+        padding: 5px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .container {
+        max-width: 850px;
+        margin: 0 auto;
+
+        img {
+            width: 250px;
+        }
+    }
+
+
+    .footer {
+        background-color: #012340;
+        border: black 1px solid;
+        @include size(100%,200px);
+        text-align: left;
+
+        li {
+            font-size: 10px;
+            margin: 50px;
+            padding: 8px;
+            height: 6px;
+            width: 0 auto;
+            margin-inline: 105px;
+            display: inline-block;
+            justify-content: center;
+        }
+
+        p {
+            color: white;
+        }
+
+        .redes img {
+            @include size(48px,48px);
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+    }
+
+}

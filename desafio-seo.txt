@@ -1,0 +1,17 @@
+Keywords:
+-Index:foda, f.o.d.a, ropa, perfume, colecciones, hombre, mujer, niños
+-Ropa:foda, f.o.d.a, ropa, colecciones, hombre, mujer, niños
+-Perfume:foda, f.o.d.a, perfume, perfumes, hombre, mujer, niños
+-Colecciones:foda, f.o.d.a, colecciones, hombre, mujer, niños
+-Sobre-nosotros:contacto, ayuda, atencion, cliente, foda
+
+Descripcion:
+-Index: f.o.d.a es la nueva tienda online de coleccion para hombres, mujeres y niños.
+-Ropa:foda presenta sus articulos de ropa con la mejor calidad.
+-Perfume:foda presenta su ultima coleccion de perfumes.
+-Colecciones:foda adquiere una amplia coleccion para toda la familia y al mejor precio.
+-Sobre-nosotros: completa el formulario de contacto para recibir mas informacion.
+
+Multimedia:
+-Reduje el tamaño de las imagenes
+-realice cambios de imagenes 

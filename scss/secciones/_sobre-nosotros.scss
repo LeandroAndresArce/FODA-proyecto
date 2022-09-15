@@ -1,0 +1,42 @@
+.div_sobrenosotros {
+    display: flex;
+    margin: 30px auto 40px auto;
+    justify-content: space-around;
+    align-items: left;
+    width: 80%;
+
+    h5 {
+        font-weight: 300;
+        font-size: 2rem;
+    }
+}
+
+.formulario {
+    background-color: #089BF4;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 30px;
+    width: 400px;
+    border: 0;
+    outline: none;
+
+    .boton {
+        border-radius: 3px;
+        padding: 10px 5px;
+        background-color: #012340;
+        color: white;
+    }
+
+    .input {
+        background-color: #012340;
+        color: white;
+        border: 1px black solid;
+        padding: 10px;
+        transition: .3s;
+
+        &:hover {
+            background-color: black;
+        }
+    }
+
+}

@@ -7,7 +7,8 @@
   font-family: 'Barlow', sans-serif; }
 
 .body {
-  background-color: white; }
+  background-color: white;
+  background-image: url(../img/fondo1.jpg); }
   .body .header {
     background-color: #1F82BE;
     width: 100%;
@@ -23,12 +24,17 @@
         color: white;
         border-radius: 1rem;
         height: 45px; }
+        .body .header .lista li:hover {
+          background-color: #089BF4;
+          transition: .3s; }
         .body .header .lista li a {
           color: white;
           text-decoration: none; }
-          .body .header .lista li a:hover {
-            background-color: #089BF4;
-            transition: .3s; }
+  .body .titulo {
+    background-color: black;
+    width: 100%;
+    color: white;
+    text-align: center; }
   .body .span {
     background-color: black;
     color: white;
@@ -44,8 +50,8 @@
   .body .footer {
     background-color: #012340;
     border: black 1px solid;
-    height: 200px;
     width: 100%;
+    height: 200px;
     text-align: left; }
     .body .footer li {
       font-size: 10px;
@@ -65,7 +71,7 @@
       padding: 0; }
 
 .grid_titulo_oferta {
-  background-color: #089BF4;
+  background-color: black;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: black 2px solid;
   color: white;
@@ -83,7 +89,7 @@
   gap: 2rem;
   margin: 0; }
   .grid .grid_titulo {
-    background-color: #089BF4;
+    background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black 2px solid;
     color: white;
@@ -96,18 +102,17 @@
     border: black 1px solid; }
   .grid .grid_item_1 {
     grid-area: item1;
-    background-image: url(../img/men-remera.jpg);
+    background-image: url(../img/hombre4.jpg);
     height: 400px; }
   .grid .grid_item_2 {
     grid-area: item2;
-    background-image: url(../img/woman-remera.jpg);
+    background-image: url(../img/mujer4.jpg);
     height: 400px; }
   .grid .grid_item_3 {
     grid-area: item3;
-    background-image: url(../img/boys-coleccion.jpg);
+    background-image: url(../img/coleccion-niños.jpg);
     height: 400px; }
 
-/************perfumes*************/
 .grid_perfume {
   padding: 6rem;
   display: grid;
@@ -117,7 +122,7 @@
   gap: 2rem;
   margin: 0; }
   .grid_perfume .grid_titulo {
-    background-color: #089BF4;
+    background-color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black 2px solid;
     color: white;
@@ -130,18 +135,17 @@
     border: black 1px solid; }
   .grid_perfume .grid_item_perfume_1 {
     grid-area: item1;
-    background-image: url(../img/perfume-men.jpg);
+    background-image: url(../img/perfume-lacoste.jpg);
     height: 400px; }
   .grid_perfume .grid_item_perfume_2 {
     grid-area: item2;
-    background-image: url(../img/perfume-woman2.jpg);
+    background-image: url(../img/perfume-mujer.jpg);
     height: 400px; }
   .grid_perfume .grid_item_perfume_3 {
     grid-area: item3;
-    background-image: url(../img/perfumen-niño.jpg);
+    background-image: url(../img/perfume-niños.jpg);
     height: 400px; }
 
-/******************COLECCIONES*****************************/
 .section_coleccion {
   padding: 1rem;
   padding-top: 0; }
@@ -152,7 +156,8 @@
     flex-direction: column;
     align-items: center; }
     .section_coleccion .titulos h4 {
-      background-color: #089BF4;
+      background-color: black;
+      color: white;
       font-weight: 300;
       font-size: 1.2rem;
       padding: .5rem 1rem; }
@@ -167,7 +172,8 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    border: black 1px solid; }
+    border: black 1px solid;
+    background-color: white; }
     .catalogos .catalogo img {
       max-width: 100%; }
     .catalogos .catalogo h4 {
@@ -183,7 +189,6 @@
       color: white;
       text-decoration: none; }
 
-/*******SOBRE NOSOTROS*******/
 .div_sobrenosotros {
   display: flex;
   margin: 30px auto 40px auto;
@@ -216,22 +221,31 @@
     .formulario .input:hover {
       background-color: black; }
 
-/************responsive***********/
+@media (max-width: 1105px) {
+  .body .footer .redes li {
+    margin: 50px;
+    margin-inline: 90px; }
+  .body .footer .redes img {
+    width: 42px;
+    height: 42px; } }
+
 @media (max-width: 1186px) {
-  .redes img {
+  .body .footer .redes img {
     width: 38px;
     height: 38px; }
-  .footer li {
-    margin-inline: 65px; } }
+  .body .footer .redes li {
+    margin: 45px;
+    margin-inline: 70px; } }
 
 @media (max-width: 834px) {
   .header {
     flex-direction: column; }
   .footer {
     flex-direction: column; }
-  .footer li {
+  .body .footer .redes li {
+    margin: 45px;
     margin-inline: 55px; }
-  .redes img {
+  .body .footer .redes img {
     width: 24px;
     height: 24px; }
   .container {
@@ -248,7 +262,7 @@
     height: 300px; }
   .formulario {
     width: 300px; }
-  .footer li {
+  .body .footer .redes li {
     margin-inline: 35px; }
   .grid_perfume {
     padding: 2rem; }
@@ -273,7 +287,7 @@
     padding: 0.1rem; }
   .grid {
     padding: 0.1rem; }
-  .footer li {
+  .body .footer .redes li {
     margin-inline: 15px; }
   .formulario {
     width: 200px; }
@@ -282,9 +296,11 @@
     grid-template-rows: repeat(9, 1fr); } }
 
 @media (max-width: 394px) {
-  .redes img {
+  .body .footer .redes img {
     width: 20px;
-    height: 20px; }
+    height: 20px;
+    display: flex;
+    flex-direction: column; }
   .img-sobrenosotros {
     width: 275px;
     height: 125px; } }

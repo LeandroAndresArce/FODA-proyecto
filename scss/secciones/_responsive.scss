@@ -1,0 +1,134 @@
+@media(max-width:1105px){
+    .body .footer .redes li{
+        margin: 50px;
+        margin-inline: 90px;
+    }
+    .body .footer .redes img{
+        @include size(42px,42px);
+    }
+}
+
+@media(max-width:1186px) {
+
+    .body .footer .redes img{
+        @include size(38px,38px);
+    }
+
+    .body .footer .redes li{
+        margin: 45px;
+        margin-inline: 70px;
+    }
+}
+
+
+@media(max-width:834px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+
+    }
+
+    .body .footer .redes li{
+        margin: 45px;
+        margin-inline: 55px;
+    }
+
+    .body .footer .redes img{
+        @include size(24px,24px);
+    }
+
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .grid_perfume {
+        padding: 3rem;
+    }
+
+    .grid {
+        padding: 3rem;
+    }
+}
+
+@media(max-width:770px) {
+    .img-sobrenosotros {
+        @include size(500px,300px);
+    }
+
+    .formulario {
+        width: 300px;
+    }
+
+    .body .footer .redes li {
+        margin-inline: 35px;
+    }
+
+    .grid_perfume {
+        padding: 2rem;
+    }
+
+    .grid {
+        padding: 2rem;
+    }
+}
+
+@media(max-width:770px) {
+    .catalogos {
+        gap: 0.3rem;
+    }
+}
+
+@media(max-width:533px) {
+    .section_coleccion {
+        padding: 0;
+    }
+
+    .catalogos {
+        gap: 0;
+        display: table-row;
+        flex-direction: row;
+    }
+
+    .img-sobrenosotros {
+        @include size(375px,165px);
+    }
+
+    .grid_perfume {
+        padding: 0.1rem;
+    }
+
+    .grid {
+        padding: 0.1rem;
+    }
+
+    .body .footer .redes li {
+        margin-inline: 15px;
+    }
+
+    .formulario {
+        width: 200px;
+    }
+
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+    }
+}
+
+@media(max-width:394px) {
+    .body .footer .redes img{
+        @include size(20px,20px);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-sobrenosotros {
+        @include size(275px,125px);
+
+    }
+
+}
