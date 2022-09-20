@@ -51,24 +51,52 @@
     background-color: #012340;
     border: black 1px solid;
     width: 100%;
-    height: 200px;
-    text-align: left; }
-    .body .footer li {
-      font-size: 10px;
-      margin: 50px;
-      padding: 8px;
-      height: 6px;
-      width: 0 auto;
-      margin-inline: 105px;
-      display: inline-block;
-      justify-content: center; }
-    .body .footer p {
-      color: white; }
-    .body .footer .redes img {
-      width: 48px;
-      height: 48px;
+    height: auto;
+    background-size: cover; }
+    .body .footer .container__footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
       margin: 0;
-      padding: 0; }
+      margin-top: 0px; }
+    .body .footer .box__footer {
+      display: flex;
+      flex-direction: column;
+      padding: 0px; }
+      .body .footer .box__footer .logo img {
+        width: 100px;
+        height: 100px; }
+      .body .footer .box__footer .terms {
+        max-width: 350px;
+        margin-top: 20px;
+        font-weight: 500;
+        color: #7a7a7a;
+        font-size: 18px; }
+      .body .footer .box__footer h2 {
+        margin-bottom: 30px;
+        color: #343434;
+        font-weight: 700; }
+      .body .footer .box__footer a {
+        margin-top: 10px;
+        color: #7a7a7a;
+        font-weight: 600; }
+        .body .footer .box__footer a:hover {
+          opacity: 0.8; }
+        .body .footer .box__footer a .fab {
+          font-size: 20px; }
+    .body .footer .box__copyright {
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+      padding: 0px 40px; }
+      .body .footer .box__copyright p {
+        margin-top: 20px;
+        color: #7a7a7a; }
+      .body .footer .box__copyright hr {
+        border: none;
+        height: 1px;
+        background-color: #7a7a7a; }
 
 .grid_titulo_oferta {
   background-color: black;
@@ -81,44 +109,31 @@
   padding: 40px; }
 
 .grid {
-  padding: 6rem;
+  padding: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "item1 item2 item3";
   gap: 2rem;
   margin: 0; }
-  .grid .grid_titulo {
+  .grid .card {
+    background-color: #E0ECFF;
+    border: black solid 1px; }
+  .grid .card-title {
+    text-align: center;
+    border: solid black 1px;
+    border-radius: 2rem;
     background-color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: black 2px solid;
-    color: white;
-    text-align: center; }
-  .grid .grid_item {
-    border-radius: 1rem;
-    background-size: cover;
-    background-position: center center;
-    padding: 2rem;
-    border: black 1px solid; }
-  .grid .grid_item_1 {
-    grid-area: item1;
-    background-image: url(../img/hombre4.jpg);
-    height: 400px; }
-  .grid .grid_item_2 {
-    grid-area: item2;
-    background-image: url(../img/mujer4.jpg);
-    height: 400px; }
-  .grid .grid_item_3 {
-    grid-area: item3;
-    background-image: url(../img/coleccion-niños.jpg);
-    height: 400px; }
+    color: white; }
+  .grid .card-body {
+    text-align: center;
+    align-items: center; }
 
 .grid_perfume {
   padding: 6rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "item1 item2 item3";
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas: "item1" "item2" "item3";
   gap: 2rem;
   margin: 0; }
   .grid_perfume .grid_titulo {
@@ -126,25 +141,27 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: black 2px solid;
     color: white;
+    height: 25px;
     text-align: center; }
+  .grid_perfume .box {
+    display: flex;
+    background-color: #E0ECFF; }
   .grid_perfume .grid_item_perfume {
-    border-radius: 1rem;
     background-size: cover;
     background-position: center center;
+    width: 200px;
+    height: 200px;
     padding: 2rem;
     border: black 1px solid; }
   .grid_perfume .grid_item_perfume_1 {
     grid-area: item1;
-    background-image: url(../img/perfume-lacoste.jpg);
-    height: 400px; }
+    background-image: url(../img/perfume-lacoste.jpg); }
   .grid_perfume .grid_item_perfume_2 {
     grid-area: item2;
-    background-image: url(../img/perfume-mujer.jpg);
-    height: 400px; }
+    background-image: url(../img/perfume-mujer.jpg); }
   .grid_perfume .grid_item_perfume_3 {
     grid-area: item3;
-    background-image: url(../img/perfume-niños.jpg);
-    height: 400px; }
+    background-image: url(../img/perfume-niños.jpg); }
 
 .section_coleccion {
   padding: 1rem;
@@ -189,81 +206,70 @@
       color: white;
       text-decoration: none; }
 
-.div_sobrenosotros {
-  display: flex;
-  margin: 30px auto 40px auto;
-  justify-content: space-around;
-  align-items: left;
-  width: 80%; }
-  .div_sobrenosotros h5 {
-    font-weight: 300;
-    font-size: 2rem; }
+.sobrenosotros {
+  background-image: url(/img/fondo-final.jpg);
+  background-image: center center; }
+  .sobrenosotros .div_sobrenosotros {
+    display: flex;
+    margin: 30px auto 40px auto;
+    justify-content: space-around;
+    align-items: left;
+    width: 80%; }
+    .sobrenosotros .div_sobrenosotros h5 {
+      font-weight: 300;
+      font-size: 2rem; }
+  .sobrenosotros .box-formulario {
+    display: flex; }
+    .sobrenosotros .box-formulario .formulario {
+      background-color: #089BF4;
+      border-radius: 3px;
+      padding: 10px;
+      margin: 30px;
+      width: 400px;
+      border: 0;
+      outline: none; }
+      .sobrenosotros .box-formulario .formulario .boton {
+        border-radius: 3px;
+        padding: 10px 5px;
+        background-color: #012340;
+        color: white; }
+      .sobrenosotros .box-formulario .formulario .input {
+        background-color: #012340;
+        color: white;
+        border: 1px black solid;
+        padding: 10px;
+        transition: .3s; }
+        .sobrenosotros .box-formulario .formulario .input:hover {
+          background-color: black; }
+      .sobrenosotros .box-formulario .formulario .ubicacion {
+        padding: 10px;
+        margin: 30px; }
 
-.formulario {
-  background-color: #089BF4;
-  border-radius: 3px;
-  padding: 10px;
-  margin: 30px;
-  width: 400px;
-  border: 0;
-  outline: none; }
-  .formulario .boton {
-    border-radius: 3px;
-    padding: 10px 5px;
-    background-color: #012340;
-    color: white; }
-  .formulario .input {
-    background-color: #012340;
-    color: white;
-    border: 1px black solid;
-    padding: 10px;
-    transition: .3s; }
-    .formulario .input:hover {
-      background-color: black; }
+@media (max-width: 1074px) {
+  .box-formulario {
+    display: flex;
+    flex-direction: row; }
+  .ubicacion {
+    width: 300px;
+    height: 250px; } }
 
-@media (max-width: 1105px) {
-  .body .footer .redes li {
-    margin: 50px;
-    margin-inline: 90px; }
-  .body .footer .redes img {
-    width: 42px;
-    height: 42px; } }
-
-@media (max-width: 1186px) {
-  .body .footer .redes img {
-    width: 38px;
-    height: 38px; }
-  .body .footer .redes li {
-    margin: 45px;
-    margin-inline: 70px; } }
+@media (max-width: 968px) {
+  .grid {
+    display: flex;
+    flex-direction: row; } }
 
 @media (max-width: 834px) {
   .header {
     flex-direction: column; }
-  .footer {
-    flex-direction: column; }
-  .body .footer .redes li {
-    margin: 45px;
-    margin-inline: 55px; }
-  .body .footer .redes img {
-    width: 24px;
-    height: 24px; }
   .container {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .grid_perfume {
-    padding: 3rem; }
-  .grid {
     padding: 3rem; } }
 
 @media (max-width: 770px) {
-  .img-sobrenosotros {
-    width: 500px;
-    height: 300px; }
   .formulario {
-    width: 300px; }
-  .body .footer .redes li {
-    margin-inline: 35px; }
+    width: 150px; }
   .grid_perfume {
     padding: 2rem; }
   .grid {
@@ -273,6 +279,16 @@
   .catalogos {
     gap: 0.3rem; } }
 
+@media (max-width: 610px) {
+  .formulario {
+    width: 150px; }
+  .ubicacion {
+    width: 200px;
+    height: 150px; }
+  .box-formulario {
+    display: flex;
+    flex-direction: column; } }
+
 @media (max-width: 533px) {
   .section_coleccion {
     padding: 0; }
@@ -280,27 +296,12 @@
     gap: 0;
     display: table-row;
     flex-direction: row; }
-  .img-sobrenosotros {
-    width: 375px;
-    height: 165px; }
   .grid_perfume {
     padding: 0.1rem; }
   .grid {
     padding: 0.1rem; }
-  .body .footer .redes li {
-    margin-inline: 15px; }
-  .formulario {
+  .sobrenosotros .box-formulario .formulario {
     width: 200px; }
   .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr); } }
-
-@media (max-width: 394px) {
-  .body .footer .redes img {
-    width: 20px;
-    height: 20px;
-    display: flex;
-    flex-direction: column; }
-  .img-sobrenosotros {
-    width: 275px;
-    height: 125px; } }

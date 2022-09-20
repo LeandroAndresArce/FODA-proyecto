@@ -1,3 +1,7 @@
+.sobrenosotros {
+    background-image: url(/img/fondo-final.jpg);
+    background-image: center center;
+
 .div_sobrenosotros {
     display: flex;
     margin: 30px auto 40px auto;
@@ -11,32 +15,42 @@
     }
 }
 
-.formulario {
-    background-color: #089BF4;
-    border-radius: 3px;
-    padding: 10px;
-    margin: 30px;
-    width: 400px;
-    border: 0;
-    outline: none;
+.box-formulario {
+    display: flex;
 
-    .boton {
+    .formulario {
+        background-color: #089BF4;
         border-radius: 3px;
-        padding: 10px 5px;
-        background-color: #012340;
-        color: white;
-    }
-
-    .input {
-        background-color: #012340;
-        color: white;
-        border: 1px black solid;
         padding: 10px;
-        transition: .3s;
+        margin: 30px;
+        width: 400px;
+        border: 0;
+        outline: none;
 
-        &:hover {
-            background-color: black;
+        .boton {
+            border-radius: 3px;
+            padding: 10px 5px;
+            background-color: #012340;
+            color: white;
         }
-    }
 
+        .input {
+            background-color: #012340;
+            color: white;
+            border: 1px black solid;
+            padding: 10px;
+            transition: .3s;
+
+            &:hover {
+                background-color: black;
+            }
+        }
+
+        .ubicacion{
+            padding: 10px;
+            margin: 30px;
+        }
+
+    }
+}
 }

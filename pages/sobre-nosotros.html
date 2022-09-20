@@ -67,64 +67,93 @@
     <h1 class="titulo">NUESTRA MARCA PENSADA SIEMPRE EN EL CLIENTE</h1>
     <div class="sobrenosotros">
       <div class="div_sobrenosotros container-fluid">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga libero eos dolor repellendus, sed est
+        <p class="Text-sobre">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga libero eos dolor repellendus, sed est
           aut soluta tempora sunt facilis deserunt accusamus tempore eum tenetur in voluptas quae praesentium
           et!</p>
       </div>
-      <img class="img-sobrenosotros" src="/img/img-sobrenosotros.jpg" alt="sobre-nosotros">
+      <!--Inicio del formulario-->
+      <div class="box-formulario">
+        <form class="formulario" action="#">
+          <input class="input" type="text" placeholder="Nombre y Apellido" name="Nombre">
+          <br><br>
+          <label for="edad">Edad</label>
+          <br>
+          <input class="input" type="date" name="edad">
+          <br><br>
+          <input class="input" type="email" required placeholder="email@email.com" name="email">
+          <br><br>
+          <select class="input" name="sexo" id="sexo">
+
+            <option value="hombre">Hombre</option>
+
+            <option value="mujer">Mujer</option>
+
+            <option value="otro">Otro</option>
+
+          </select>
+          <br><br>
+          <input class="input" type="tel" placeholder="Telefono" name="telefono">
+          <br><br>
+          <input class="checkCondiciones" type="checkbox" name="acepta" value="1">
+          <br><br>
+          <input class="boton" type="reset" value="BORRAR">
+          <br><br>
+          <input class="boton" type="submit" value="ENVIAR">
+        </form>
+        <div>
+          <p class="text-ubicacion">El lugar fisico de nuestra sucursal se encuentra en Avenida Ricardo Balbin 1200.</p>
+          <iframe  class="ubicacion" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6572.678144527233!2d-58.71246528970083!3d-34.54496938519524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcbd0d7e07c78b%3A0xf879e262f796e21a!2sPlaza%20de%20San%20Miguel!5e0!3m2!1ses-419!2sar!4v1663705345638!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      <!--Fin del Formulario-->
     </div>
   </main>
 
   <!--Fin del cuerpo-->
 
-  <!--Inicio del formulario-->
-
-  <form class="formulario" action="#">
-    <input class="input" type="text" placeholder="Nombre y Apellido" name="Nombre">
-    <br><br>
-    <label for="edad">Edad</label>
-    <br>
-    <input class="input" type="date" name="edad">
-    <br><br>
-    <input class="input" type="email" required placeholder="email@email.com" name="email">
-    <br><br>
-    <select class="input" name="sexo" id="sexo">
-
-      <option value="hombre">Hombre</option>
-
-      <option value="mujer">Mujer</option>
-
-      <option value="otro">Otro</option>
-
-    </select>
-    <br><br>
-    <input class="input" type="tel" placeholder="Telefono" name="telefono">
-    <br><br>
-    <input class="checkCondiciones" type="checkbox" name="acepta" value="1">
-    <br><br>
-    <input class="boton" type="reset" value="BORRAR">
-    <br><br>
-    <input class="boton" type="submit" value="ENVIAR">
-  </form>
-
-  <!--Fin del Formulario-->
-
   <!--Inicio del Footer-->
-
   <footer class="footer">
-    <p>Derechos Reservados&copy;</p>
+    <div class="container__footer">
+      <div class="box__footer">
+        <div class="logo">
+          <img src="/img/logo.png" alt="foda">
+        </div>
+        <div class="terms">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas impedit cum cumque velit libero officiis
+            quam doloremque reprehenderit quae corporis! Delectus architecto officia praesentium atque laudantium, nam
+            deleniti sapiente deserunt.</p>
+        </div>
+      </div>
+      <div class="box__footer">
+        <h2>Soluciones</h2>
+        <a href="https://www.google.com">App Desarrollo</a>
+        <a href="#">App Marketing</a>
+        <a href="#">IOS Desarrollo</a>
+        <a href="#">Android Desarrollo</a>
+      </div>
 
-    <ul class="redes">
-      <li><a href="https://www.facebook.com/" target="_blank"><img src="/img/icons/facebook.png" alt="Facebook"
-            class="facebook"></a></li>
-      <li><a href="https://www.instagram.com/" target="_blank"><img src="/img/icons/instagram.png" alt="Instagram"
-            class="Instagram"></a></li>
-      <li><a href="https://www.twitter.com/" target="_blank"> <img src="/img/icons/twitter.png" alt="Twitter"></a>
-      </li>
-      <li><a href="https://www.linkedin.com/" target="_blank"> <img src="/img/icons/Linkedin.png" alt="Linkedin"></a>
-      </li>
-    </ul>
+      <div class="box__footer">
+        <h2>Compañia</h2>
+        <a href="#">Acerca de</a>
+        <a href="#">Trabajos</a>
+        <a href="#">Procesos</a>
+        <a href="#">Servicios</a>
+      </div>
 
+      <div class="box__footer">
+        <h2>Redes Sociales</h2>
+        <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+        <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+        <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+        <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+      </div>
+
+    </div>
+
+    <div class="box__copyright">
+      <hr>
+      <p>Todos los derechos reservados © 2022 <b>F.O.D.A</b></p>
+    </div>
   </footer>
   <!--Fin del Footer-->
 </body>
