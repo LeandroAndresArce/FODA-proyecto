@@ -8,7 +8,7 @@
 
 .body {
   background-color: white;
-  background-image: url(../img/fondo1.png); }
+  background-image: url(../img/fondo-2.png); }
   .body .header {
     background-color: #1F82BE;
     width: 100%;
@@ -284,6 +284,10 @@
     display: flex;
     flex-direction: row; } }
 
+@media (max-width: 990px) {
+  .navbar-brand {
+    margin: auto; } }
+
 @media (max-width: 968px) {
   .grid {
     display: flex;
@@ -341,7 +345,9 @@
   .grid {
     padding: 0.1rem; }
   .sobrenosotros .box-formulario .formulario {
-    width: 200px; }
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px; }
   .container {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr); }

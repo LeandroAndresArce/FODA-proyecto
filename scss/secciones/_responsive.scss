@@ -5,6 +5,12 @@
     }
 }
 
+@media(max-width:990px){
+    .navbar-brand{
+        margin: auto;
+    }
+}
+
 @media(max-width: 968px) {
     .grid {
         display: flex;
@@ -99,7 +105,9 @@
     }
 
     .sobrenosotros .box-formulario .formulario {
-        width: 200px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 15px;
     }
 
     .container {
