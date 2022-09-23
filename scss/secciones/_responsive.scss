@@ -60,7 +60,7 @@
 }
 
 @media(max-width:770px) {
-    .catalogos {
+    .catalogos{
         gap: 0.3rem;
     }
 }
@@ -91,9 +91,10 @@
     }
 
     .catalogos {
-        gap: 0;
-        display: table-row;
-        flex-direction: row;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .grid_perfume {
