@@ -20,7 +20,9 @@
 
     .box{
         display: flex;
-        background-color: #E0ECFF;
+        background-image: linear-gradient(45deg, #1F82BE, #012340);
+        color: white;
+        text-align: center;
     }
 
     .grid_item_perfume {
@@ -34,17 +36,17 @@
 
         .grid_item_perfume_1 {
             grid-area: item1;
-            background-image: url(../img/perfume-lacoste.jpg);  
+            background-image: url(../img/perfume-lacoste.png);  
         }
 
         .grid_item_perfume_2 {
             grid-area: item2;
-            background-image: url(../img/perfume-mujer.jpg);
+            background-image: url(../img/perfume-mujer.png);
         }
 
         .grid_item_perfume_3 {
             grid-area: item3;
-            background-image: url(../img/perfume-niños.jpg);
+            background-image: url(../img/perfume-niños.png);
         }
     }
 
